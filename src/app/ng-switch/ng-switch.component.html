@@ -1,0 +1,9 @@
+<p>ng-switch works!</p>
+
+<div [ngSwitch]="number">
+    <span *ngSwitchCase="1">One</span>
+    <span *ngSwitchCase="2">Two</span>
+    <span *ngSwitchCase="3">Three</span>
+    <span *ngSwitchDefault>Other</span>
+</div>
+<button (click)='inr()'>Tăng</button>
