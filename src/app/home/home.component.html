@@ -1,14 +1,12 @@
-<p>Xin chào {{name}}</p>
-<input type="text" value="{{name}}" title="Đây là {{name}}">
-<br>
-<input type="text" [value]="name" [title]="'Đây là: ' + name">
-<br>
-<span *ngIf="age > 18">bạn già vcl</span>
-<br>
-<span *ngIf="age <= 18">bạn còn trẻ</span>
-<br>
-<input type="text" placeholder="Nhập tên của bạn" [(ngModel)]="name">
-<br>
-<span>Xin chào: {{name}}</span>
-<br>
-<button (click)="resetname()">Reset Name</button>
+<h3>Ng template</h3>
+
+<input type="text" [(ngModel)]="age" placeholder="tuổi của bạn">
+
+<span *ngIf="age > 18; then gia; else tre"></span>
+
+<ng-template #gia>
+    <h1>Bạn già rồi</h1>
+</ng-template>
+<ng-template #tre>
+    <h1>Bạn còn trẻ</h1>
+</ng-template>
