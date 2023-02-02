@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { FormatVNDPipe } from './pipes/format-vnd.pipe';
+import { PageNotFoundComponentComponent } from './page-not-found-component/page-not-found-component.component';
 
 
 
@@ -16,7 +17,8 @@ import { FormatVNDPipe } from './pipes/format-vnd.pipe';
     AppComponent,
     HomeComponent,
     AboutComponent,
-    FormatVNDPipe
+    FormatVNDPipe,
+    PageNotFoundComponentComponent
   ],
   imports: [
     BrowserModule,
