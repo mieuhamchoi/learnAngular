@@ -2,10 +2,10 @@
 
 
 <select [(ngModel)] = 'selectedObj'  id="city" (change)="changeProvince($event)">
-    <option *ngFor="let province of vietnamProvinceList; let index = index" [value]="province">{{province.name}}</option>
+    <option *ngFor="let province of vietnamProvinceList; let index = index" [value]="province.name">{{province.name}}</option>
 </select>
 
 <br>
-<!-- <select  id="district" >
-    <option *ngFor="let province of vietnamProvinceList; let index = index" value="{{province.name}}">{{province.name}}</option>
-</select> -->
+<select  id="district" >
+    <option *ngFor="let district of districtList; let index = index" value="{{district}}">{{district}}</option>
+</select>
