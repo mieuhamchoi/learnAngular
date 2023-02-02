@@ -13,9 +13,9 @@
         </tr>
         <tr *ngFor="let fruitObj of fruitListDetail; let index = index">
             <td>{{index + 1}}</td>
-            <td>{{fruitObj.name}}</td>
+            <td>{{fruitObj.name | uppercase }}</td>
             <!-- <td [ngClass]="{'highPrice': fruitObj.price >= 15000 }">{{fruitObj.price}}</td> -->
-            <td [ngClass]="fruitObj.price >= 15000 ? 'highPrice' : 'lowPrice'">{{fruitObj.price}}</td>
+            <td [ngClass]="fruitObj.price >= 15000 ? 'highPrice' : 'lowPrice'">{{fruitObj.price | formatVND}}</td>
         </tr>
     </table>
 </div>

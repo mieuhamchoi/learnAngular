@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 // các compenent do mình tự tạo
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
+import { FormatVNDPipe } from './pipes/format-vnd.pipe';
 
 
 
@@ -14,7 +15,8 @@ import { AboutComponent } from './about/about.component';
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    FormatVNDPipe
   ],
   imports: [
     BrowserModule,
