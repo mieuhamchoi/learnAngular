@@ -1,12 +1,5 @@
-<h3>Ng template</h3>
+<h3>Ng For</h3>
 
-<input type="text" [(ngModel)]="age" placeholder="tuổi của bạn">
-
-<span *ngIf="age > 18; then gia; else tre"></span>
-
-<ng-template #gia>
-    <h1>Bạn già rồi</h1>
-</ng-template>
-<ng-template #tre>
-    <h1>Bạn còn trẻ</h1>
-</ng-template>
+<div>
+    <li *ngFor="let fruit of fruitList; let index = index"> {{index}}. {{fruit}}</li>
+</div>
