@@ -3,3 +3,19 @@
 <div>
     <li *ngFor="let fruit of fruitList; let index = index"> {{index}}. {{fruit}}</li>
 </div>
+
+<div>
+    <table>
+        <tr>
+            <th>STT</th>
+            <th>Name</th>
+            <th>Price</th>
+        </tr>
+        <tr *ngFor="let fruitObj of fruitListDetail; let index = index">
+            <td>{{index + 1}}</td>
+            <td>{{fruitObj.name}}</td>
+            <!-- <td [ngClass]="{'highPrice': fruitObj.price >= 15000 }">{{fruitObj.price}}</td> -->
+            <td [ngClass]="fruitObj.price >= 15000 ? 'highPrice' : 'lowPrice'">{{fruitObj.price}}</td>
+        </tr>
+    </table>
+</div>
