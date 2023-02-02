@@ -1,5 +1,5 @@
-<p>ng-switch works!</p>
-
+<p appHighLight>ng-switch works!</p>
+<p [appHighLight]="'red'">ng-switch works!</p>
 <div [ngSwitch]="number">
     <span *ngSwitchCase="1">One</span>
     <span *ngSwitchCase="2">Two</span>
