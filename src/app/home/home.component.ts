@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-
+  public name:string = 'Phuoc'
+  public age:number = 18
+  constructor() {}
+  public resetname = ():void => {
+    this.name = ''
+  }
 }

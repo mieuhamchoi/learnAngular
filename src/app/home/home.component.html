@@ -1,1 +1,14 @@
-<p>home works!</p>
+<p>Xin chào {{name}}</p>
+<input type="text" value="{{name}}" title="Đây là {{name}}">
+<br>
+<input type="text" [value]="name" [title]="'Đây là: ' + name">
+<br>
+<span *ngIf="age > 18">bạn già vcl</span>
+<br>
+<span *ngIf="age <= 18">bạn còn trẻ</span>
+<br>
+<input type="text" placeholder="Nhập tên của bạn" [(ngModel)]="name">
+<br>
+<span>Xin chào: {{name}}</span>
+<br>
+<button (click)="resetname()">Reset Name</button>
