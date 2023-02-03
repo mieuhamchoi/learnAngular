@@ -1,0 +1,7 @@
+<p>model-driven-form works!</p>
+<form [formGroup]="formData2" (ngSubmit)="submitForm()">
+    <input type="text" placeholder="nhập tên" formControlName="name">
+    <span *ngIf="!formData2.controls.name.valid" style="color: red">Phải nhập tên</span>
+    <input type="text" placeholder="nhập tuổi" formControlName="age">
+    <button type="submit" [disabled]="!formData2.valid">Submit</button>
+</form>
