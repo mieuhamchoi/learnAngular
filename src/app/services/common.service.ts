@@ -9,4 +9,7 @@ export class CommonService {
   public square(n: number) :number {
     return n * n
   }
+  public sendDataToServer(data: object):void {
+    console.log("Data sẽ gửi lên server", data)
+  }
 }
