@@ -9,6 +9,8 @@ import { TemplateDrivenFormComponent } from './template-driven-form/template-dri
 import { ModelDrivenFormComponent } from './model-driven-form/model-driven-form.component';
 import { ViewGetDataComponent } from './view-get-data/view-get-data.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +18,9 @@ import { HttpClientModule } from '@angular/common/http';
     HighLightDirective,
     TemplateDrivenFormComponent,
     ModelDrivenFormComponent,
-    ViewGetDataComponent
+    ViewGetDataComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,

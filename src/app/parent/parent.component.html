@@ -1,0 +1,9 @@
+<p>parent works!</p>
+<br>
+<span>{{textChao}}</span>
+<br>
+<button (click)="choConTien()">Cho tiền</button>
+<br>
+<app-child #thangTeo name ='Tèo' (conGoi)="conGoi($event)"></app-child> 
+<br>
+<app-child #thangTi name ='Tí' (conGoi)="conGoi($event)"></app-child> 
