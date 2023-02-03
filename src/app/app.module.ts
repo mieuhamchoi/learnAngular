@@ -7,20 +7,23 @@ import { NgSwitchComponent } from './ng-switch/ng-switch.component';
 import { HighLightDirective } from './directives/high-light.directive';
 import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
 import { ModelDrivenFormComponent } from './model-driven-form/model-driven-form.component';
-
+import { ViewGetDataComponent } from './view-get-data/view-get-data.component';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
     NgSwitchComponent,
     HighLightDirective,
     TemplateDrivenFormComponent,
-    ModelDrivenFormComponent
+    ModelDrivenFormComponent,
+    ViewGetDataComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
